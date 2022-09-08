@@ -1,0 +1,184 @@
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    margin: 0;
+    background-image: url('background.jpg');
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+background-color:#CBCBCB;
+
+}
+header
+{
+
+    
+    display: inline-block;
+    width: 100%;
+    height: 10vmin;
+ background: transparent; 
+ box-shadow: .1vmin .1vmin 1vmin .1vmin black;}
+header #logo
+{
+    
+    font-family:cursive;
+    font-size: 5.5vmin;
+    color:rgba(27, 63, 83, 0.938);
+    margin-left: 3vmin;
+    margin-top: 0.7vmin;
+    display: inline-block;
+    text-shadow: 0.1vmin 0.1vmin black ;
+    
+}
+header #navbar
+{
+    float: right;
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+    height: 100%;
+    
+    
+
+}
+header #navbar li
+{
+    cursor: pointer;   
+    padding: 1vmin;
+    padding-top: 2.8vmin;
+    display: inline-block;
+    height: 100%;   
+    margin-right: 2vmin; 
+    color: rgba(27, 63, 83, 0.938);
+    font-size: 2.7vmin;
+    transition: all 0.2s ease-in-out;
+}
+#navbar li:hover
+{
+
+    
+    background-color: rgba(145, 134, 219, 0.4);
+    
+}
+#search-box
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vmin;
+    height:8vmin;
+    width:100%;
+}
+#search-box #city
+{
+    background:transparent;
+    border: 0;
+    border-bottom:0.3vmin solid grey;
+    background: transparent;
+    height: 100%;
+    font-size: 3.5vmin;
+    margin-right: 2vmin;
+}
+#city:focus
+{
+    outline: 0;
+}
+#search-box #submit
+{
+    cursor: pointer;
+    height:60%;
+    padding: 2vmin;
+    padding-bottom: 5vmin;
+    border-radius: 4vmin;
+    font-size: 3vmin;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #8EBCE1;
+    border-radius: 4vmin ;
+    background: linear-gradient(to bottom right, #8EBCE1, #5C9FD3);
+    color: azure;
+    box-shadow: 0.1vmin 0.1vmin 0.8vmin black;
+    transition: all 0.2s ease-in-out;
+ 
+}
+#submit:hover
+{
+    transform: scale(0.95,0.95);
+    opacity: 0.8;
+}
+#card
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    margin-top:6vmin;
+    height:40vmin;
+    font-family: sans-serif;
+    transition: all .1s ease-in-out;
+
+}
+#card #card-primary,#card-secondary
+{
+    border-radius: 4vmin;
+    display:flex;
+    height:100%;
+    flex-wrap: wrap;
+    width:40vmin;
+    margin-right: 2vmin;
+    background-color: rgba(128, 128, 128,0.7);
+   color:azure;
+   padding-bottom: .2vmin;
+}
+#card-secondary
+{
+    justify-content: center;
+    align-items: center;
+    padding:.5vmin;
+    transition: all 1s ease-in-out;
+}
+
+
+#card-primary #name,#temp,#desc
+{
+    letter-spacing: 0vmin;
+    border-radius: 4vmin;
+    text-align:center;
+    font-size: 4.5vmin;
+    padding-top: 2vmin;
+    width:100%;
+    height: 30%;
+    
+}
+#temp
+{
+    height:40%;
+    font-size: 10vmin;
+}
+
+#card-secondary #card-secondary-table
+{
+    height:100%;
+    width:100%;
+}
+#card-secondary-table tr:nth-child(even)
+{
+    text-align: center;
+    color:azure;
+    font-size: 2.2vmin;
+    vertical-align: bottom;
+}
+#card-secondary-table tr:nth-child(odd)
+{
+    text-align: center;
+    color:azure;
+    font-size: 4.2vmin;
+    vertical-align: top;
+}
+
+
